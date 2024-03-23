@@ -16,8 +16,6 @@ jobs:
         with:
           model: 'iPhone 14'
 
-      - run: adb devices
-
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
