@@ -18,6 +18,8 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
+      - run: adb devices
+
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
